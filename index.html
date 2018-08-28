@@ -4,32 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css"> 
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css"> 
+  
   <link rel="stylesheet" href="css/style.css">
+
   <title>Need For Speed: Most Wanted (2012) - Cars</title>
 </head>
 <body>
   <div class="container">
     <h1>Car List</h1>
-    <table id="carTable">
+    <br>
+    <table id="carsTable" class="table table-striped table-bordered">
       <thead>
         <tr>
           <th>Make & Model</th>
           <th>Class</th>
           <th>Game</th>
-          <th>A</th>
-          <th>TS</th>
-          <th>C</th>
-          <th>W</th>
-          <th>OR</th>
-          <th>T</th>
+          <th>ACC</th>
+          <th>TOP</th>
+          <th>CON</th>
+          <th>WEI</th>
+          <th>OFF</th>
+          <th>TOU</th>
         </tr>
       </thead>
       <tbody>
-
       </tbody>
     </table>
   </div>
-  
+    
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script> 
+
+  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script> 
+  <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script> 
+
   <script src="js/cars.js"></script>
   <script src="js/main.js"></script>
 </body>
