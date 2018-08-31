@@ -1,5 +1,5 @@
 $(document).ready( function () {
-  $('#carsTable').DataTable({
+  let carsTable = $('#carsTable').DataTable({
     data: cars,
     columns: [
       { data: 'id' },
@@ -12,5 +12,12 @@ $(document).ready( function () {
       { data: 'offRoad' },
       { data: 'toughness' },
     ]
+  })
+
+  test.addEventListener('click', () => {
+    const result = cars.filter(car => car.game == 'stock')
+    carsTable.clear()
+    carsTable.rows.add(result)
+    carsTable.draw()
   })
 })
