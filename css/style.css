@@ -1,0 +1,8 @@
+.top-buffer { 
+  margin-top:20px; 
+}
+
+.filter-checkbox{
+  display: inline-block;
+  margin-right: 1rem;
+}

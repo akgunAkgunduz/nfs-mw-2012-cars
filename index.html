@@ -37,28 +37,101 @@
   </header>  
     
   <div class="container">
-    <br>
-    <h1>List</h1>
-    <br>
-    <table id="carsTable" class="table table-striped table-bordered">
-      <thead>
-        <tr>
-          <th>Make & Model</th>
-          <th>Class</th>
-          <th>Game</th>
-          <th>ACC</th>
-          <th>TOP</th>
-          <th>CON</th>
-          <th>WEI</th>
-          <th>OFF</th>
-          <th>TOU</th>
-        </tr>
-      </thead>
-      <tbody>
-      </tbody>
-    </table>
-    <br>
-    <button id="test" class="btn btn-primary">Test button (get base game cars)</button>
+    <div class="row top-buffer">      
+      <div class="col-sm-6">        
+        <div class="card">
+          <div class="card-header">Filter by Game</div>
+          <div class="card-body">
+            <div class="form-check filter-checkbox">
+              <input class="form-check-input" type="checkbox" value="stock" id="baseGame">
+              <label class="form-check-label" for="baseGame">Base Game</label>
+            </div>         
+            <div class="form-check filter-checkbox">
+              <input class="form-check-input" type="checkbox" value="terminal" id="terminal">
+              <label class="form-check-label" for="terminal">Terminal Velocity</label>                   
+            </div>
+            <div class="form-check filter-checkbox">
+              <input class="form-check-input" type="checkbox" value="hero" id="hero">
+              <label class="form-check-label" for="hero">NFS Heroes</label>                   
+            </div>
+            <div class="form-check filter-checkbox">
+              <input class="form-check-input" type="checkbox" value="movie" id="movie">
+              <label class="form-check-label" for="movie">Movie Legends</label>                   
+            </div>
+            <div class="form-check filter-checkbox">
+              <input class="form-check-input" type="checkbox" value="speed" id="speed">
+              <label class="form-check-label" for="speed">Ultimate Speed</label>                   
+            </div>
+            <div class="form-check filter-checkbox">
+              <input class="form-check-input" type="checkbox" value="multi" id="multi">
+              <label class="form-check-label" for="multi">Multiplayer Only</label>                   
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">        
+        <div class="card">
+          <div class="card-header">Filter by Class</div>
+          <div class="card-body">
+            <div class="form-check filter-checkbox">
+              <input class="form-check-input" type="checkbox" value="Exotic" id="exotic">
+              <label class="form-check-label" for="exotic">Exotic</label>
+            </div>
+            <div class="form-check filter-checkbox">
+              <input class="form-check-input" type="checkbox" value="sports" id="sports">
+              <label class="form-check-label" for="sports">Sports</label>
+            </div>
+            <div class="form-check filter-checkbox">
+              <input class="form-check-input" type="checkbox" value="Race" id="race">
+              <label class="form-check-label" for="race">Race</label>
+            </div>
+            <div class="form-check filter-checkbox">
+              <input class="form-check-input" type="checkbox" value="Grand Tourer" id="grandTourer">
+              <label class="form-check-label" for="grandTourer">Grand Tourer</label>
+            </div>
+            <div class="form-check filter-checkbox">
+              <input class="form-check-input" type="checkbox" value="Muscle" id="muscle">
+              <label class="form-check-label" for="muscle">Muscle</label>
+            </div>
+            <div class="form-check filter-checkbox">
+              <input class="form-check-input" type="checkbox" value="Everyday" id="everyday">
+              <label class="form-check-label" for="everyday">Everyday</label>
+            </div>
+            <div class="form-check filter-checkbox">
+              <input class="form-check-input" type="checkbox" value="SUV" id="suv">
+              <label class="form-check-label" for="suv">SUV</label>
+            </div>
+          </div>
+        </div>        
+      </div>      
+    </div>
+
+    <div class="row top-buffer">
+      <div class="col-lg-12">
+        <table id="carsTable" class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th>Make & Model</th>
+              <th>Class</th>
+              <th>Game</th>
+              <th>ACC</th>
+              <th>TOP</th>
+              <th>CON</th>
+              <th>WEI</th>
+              <th>OFF</th>
+              <th>TOU</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row top-buffer">
+      <div class="col-sm-12">
+        <button id="test" class="btn btn-primary">Test button (get base game cars)</button>
+      </div>
+    </div>
   </div>
     
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
