@@ -10,3 +10,8 @@
 #filter:disabled {
   cursor: not-allowed;
 }
+
+.navbar-brand {
+  padding-left: 0;
+  padding-right: 0;
+}
